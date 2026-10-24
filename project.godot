@@ -1,0 +1,38 @@
+; Tessera — Blockudoku brain-casual (Android / iOS portrait)
+
+config_version=5
+
+[application]
+
+config/name="Tessera"
+config/description="Place blocks. Clear lines. Outthink the grid."
+config/version="0.1.0"
+run/main_scene="res://scenes/boot.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Loc="*res://scripts/core/loc.gd"
+SaveData="*res://scripts/core/save_data.gd"
+AudioBus="*res://scripts/game/audio_bus.gd"
+AppTheme="*res://assets/ui/theme.gd"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/window_width_override=540
+window/size/window_height_override=960
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[rendering]
+
+renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.08, 0.07, 0.09, 1)

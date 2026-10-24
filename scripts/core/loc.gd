@@ -8,11 +8,11 @@ var code: String = "en"
 var _t := {
 	"en": {
 		"game.title": "Tessera",
-		"game.tag": "Place blocks. Clear the grid.",
+		"game.tag": "Place. Clear. Think ahead.",
 		"menu.play": "Play",
 		"menu.best": "Best  %d",
 		"menu.leave": "Leave",
-		"hud.hint": "Drag a block onto the board",
+		"hud.hint": "Drag a block up",
 		"over.title": "No moves",
 		"over.score": "Score  %d",
 		"over.best": "Best  %d",
@@ -21,10 +21,15 @@ var _t := {
 		"over.menu": "Menu",
 		"flash.clear": "Clear",
 		"flash.combo": "Combo ×%d",
+		"coach.title": "How to play",
+		"coach.1": "Drag a block onto the board.",
+		"coach.2": "Fill a row, column, or 3×3 box to clear.",
+		"coach.3": "Plan ahead — no moves ends the run.",
+		"coach.ok": "Play",
 	},
 	"vi": {
 		"game.title": "Tessera",
-		"game.tag": "Đặt khối. Xóa lưới.",
+		"game.tag": "Đặt. Xóa. Nghĩ trước.",
 		"menu.play": "Chơi",
 		"menu.best": "Cao nhất  %d",
 		"menu.leave": "Thoát",
@@ -37,6 +42,11 @@ var _t := {
 		"over.menu": "Menu",
 		"flash.clear": "Xóa",
 		"flash.combo": "Combo ×%d",
+		"coach.title": "Cách chơi",
+		"coach.1": "Kéo khối lên bàn.",
+		"coach.2": "Đầy hàng, cột hoặc ô 3×3 để xóa.",
+		"coach.3": "Nghĩ trước — hết nước là hết ván.",
+		"coach.ok": "Chơi",
 	},
 }
 

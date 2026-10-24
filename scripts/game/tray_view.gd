@@ -12,17 +12,18 @@ func _ready() -> void:
 func _draw() -> void:
 	if game == null:
 		return
-	const CELL := 36.0
-	const GAP := 3.0
+	var cell := 40.0
+	var gap := 3.0
 	var tray: Array = game._tray
 	var drag_i: int = game._drag_i
 	for i in 3:
 		var slot: Rect2 = game._tray_slot_rect(i)
-		draw_rect(slot.grow(-10), Color(0.12, 0.1, 0.12, 0.7), true)
+		draw_rect(slot.grow(-12), Color(0.12, 0.1, 0.12, 0.75), true)
+		draw_rect(slot.grow(-12), Color(0.94, 0.84, 0.62, 0.08), false, 1.0)
 		var piece = tray[i]
 		if piece == null or i == drag_i:
 			continue
-		_draw_piece(piece, slot.get_center(), CELL, GAP)
+		_draw_piece(piece, slot.get_center(), cell, gap)
 
 
 func _draw_piece(piece: Dictionary, center: Vector2, cell: float, gap: float) -> void:

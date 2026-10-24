@@ -1,21 +1,22 @@
 # Tessera
 
-Blockudoku-style brain casual: place polyominoes on a 9×9 grid. Clear full rows, columns, and 3×3 boxes. Combo for multi-clears. No moves left — again.
+**Studio build** — place polyominoes on a 9×9 grid. Clear rows, columns, and 3×3 boxes. Combo. Plan ahead.
 
-**Hack não + gây nghiện** — nghĩ chỗ đặt, dopamine khi xóa dây.
+International brain-casual for Android / iOS.
 
 ## Play
 
-Godot 4.7+ → open `project.godot` → F5. Drag blocks from the tray onto the board.
+Open in Godot 4.7+ → F5 → **Play**. Drag a block from the tray; it floats above your finger so you can see the board.
 
-Mobile design: **1080×1920** portrait (Android / iOS).
+## Studio features (v0.2)
+
+- Adaptive board sizing  
+- Drag-lift (mobile standard)  
+- Clear flash + floating +score + combo shake  
+- Weighted piece bag  
+- One-shot coach  
+- EN / VI  
 
 ```bash
 Godot --path . --headless -s res://tools/smoke_test.gd
 ```
-
-## Why not Aureole / Mothglass
-
-- Aureole: too shallow  
-- Mothglass: too opaque  
-- Tessera: spatial planning + clear juice (international hit formula)
